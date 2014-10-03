@@ -1,17 +1,24 @@
-<section class="post_section">
+<section class="center_section">
+	<section class="post_section">
 
-	<h2 class="post_title">
-		<%= post.title %>
-	</h2>
+		<section class="left_section">
+			<% @photos.where(post_id: post.id).each do |photo| %>
+			<img src="<%= photo.url %>" width="700">
+			<% end %>
+		</section>
 
-	<% @photos.where(id: post.editor_id).each do |photo| %>
-	<img src="<%= photo.url %>">
-	<% end %>
+		<section class="right_section">
+			<h2 class="post_title">
+				<%= post.title %>
+			</h2>
 
-	<section class="post_content">
-		<p><%= post.content %></p>
-		<p><%= post.editor_id %></p>
-		<p><%= post.created_at %></p>
+			<section class="post_content">
+				<p><%= post.content %></p>
+				<p><%= post.editor_id %></p>
+				<p><%= post.created_at %></p>
+			</section>
+		</section>
+
+
 	</section>
-
 </section>

@@ -1,0 +1,39 @@
+.center_section {
+	width: 96%;
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.post_section {
+	width: 100%;
+	background: rgba(0,0,0,.03);
+	border: 1px solid rgba(0,0,0,.05);
+	display: inline-block;
+}
+
+.comment_content {
+	display: block;
+	clear: both;
+}
+
+.left_section {
+	display: inline-block;
+	float: left;
+	margin: 25px;
+}
+
+#upload_h2 {
+	margin: 25px 0 0 25px;
+}
+
+#add_blog_post {
+	margin: 25px;
+}
+
+
+
+
+
+
+
