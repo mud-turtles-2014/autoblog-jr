@@ -18,4 +18,29 @@ $(document).ready(function() {
     });
   });
 
+
+
+	var count = 3;
+
+
+	$('#load_more').submit(function(event) {
+    event.preventDefault()
+    count += 1;
+    console.log(count)
+
+    $.ajax({
+      type: "POST",
+      url: '/',
+      data: {"count": count}
+    })
+    .done(function(response) {
+    	console.log("reached here")
+    	console.log(response)
+      $('#spacer').prepend(response);
+    });
+  });
+
+
+
+
 });

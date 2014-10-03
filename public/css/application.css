@@ -75,13 +75,25 @@ nav li a:hover {
 	font-size: .9em;
 }
 
+#spacer {
+	height: 30px;
+}
 
 
+#form_section {
+	width: 100%
+}
 
+#load_more {
+	width: 200px;
+	display: block;
+	margin: auto;
+}
 
-
-
-
+#load_button {
+	margin: 20px 0 0;
+	width: 100%;
+}
 
 
 

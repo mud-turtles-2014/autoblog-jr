@@ -1,4 +1,11 @@
 <% @posts.each do |post| %>
 	<%= erb :_post, layout: false, locals: { post: post } %>
 <% end %>
+
+<section id="form_section">
+	<form id="load_more" action="/" method="post">
+		<input id="load_button" type="submit" value="more">
+	</form>
+</section>
+
 <div id="spacer"></div>
