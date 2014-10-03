@@ -1,0 +1,37 @@
+<section class="center_section">
+	<section class="post_section">
+
+
+		<section class="left_section">
+			<% @photo.where(post_id: @post.id).each do |photo| %>
+			<img src="<%= photo.url %>" width="700">
+			<% end %>
+		</section>
+
+		<section class="right_section">
+				<h2 class="post_title">
+					<%= @post.title %>
+				</h2>
+			<section class="post_content">
+				<p><%= @post.content %></p>
+				<p><%= @post.editor_id %></p>
+				<p><%= @post.created_at %></p>
+			</section>
+		</section>
+
+		<section class="comment_section">
+			<form id="add_comment" action="/posts/<%= @post.id %>" method="post">
+				<input class="comment_form" name="comment_text" type="text" <%unless current_user%> disabled value="login to comment" <%end%>>
+				<input type="submit" value="submit">
+			</form>
+			<ul class="comment_list">
+				<% @comments.each do |comment| %>
+				<p><%= comment.text %></p>
+				<% end %>
+			</ul>
+		</section>
+
+
+	</section>
+</section>
+<div class="spacer"></div>

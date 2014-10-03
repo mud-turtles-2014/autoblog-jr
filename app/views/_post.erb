@@ -8,10 +8,11 @@
 		</section>
 
 		<section class="right_section">
-			<h2 class="post_title">
-				<%= post.title %>
-			</h2>
-
+			<a class="post_link" href="/posts/<%= post.id %>">
+				<h2 class="post_title">
+					<%= post.title %>
+				</h2>
+			</a>
 			<section class="post_content">
 				<p><%= post.content %></p>
 				<p><%= post.editor_id %></p>

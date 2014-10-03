@@ -12,7 +12,7 @@
 	display: inline-block;
 }
 
-.comment_content {
+.comment_section {
 	display: block;
 	clear: both;
 }
@@ -31,9 +31,29 @@
 	margin: 25px;
 }
 
+.comment_form {
+	margin-bottom: 25px;
+	margin-left: 25px;
+	width: 300px;
+}
 
+form.add_comment {
+	margin: 0 0 25px 25px;
+}
 
+a.post_link {
+	text-decoration: none;
+	color: black;
+}
 
+a.post_link:hover {
+	color: gray;
+}
+
+.right_section p {
+	margin: 0 25px 30px 0;
+	line-height: 1.7em;
+}
 
 
 
